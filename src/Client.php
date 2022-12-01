@@ -6,11 +6,11 @@ use GuzzleHttp\ClientInterface as HttpClient;
 
 class Client
 {
-    use vasyaxy\Services\Trello\Traits\ApiMethodsTrait;
-    use vasyaxy\Services\Trello\Traits\AuthorizationTrait;
-    use vasyaxy\Services\Trello\Traits\BatchTrait;
-    use vasyaxy\Services\Trello\Traits\ConfigurationTrait;
-    use vasyaxy\Services\Trello\Traits\SearchTrait;
+    use Traits\ApiMethodsTrait;
+    use Traits\AuthorizationTrait;
+    use Traits\BatchTrait;
+    use Traits\ConfigurationTrait;
+    use Traits\SearchTrait;
 
     /**
      * Default client options
@@ -47,7 +47,7 @@ class Client
     /**
      * Retrieves a new authorization broker.
      *
-     * @return vasyaxy\Services\Trello\Authorization
+     * @return Authorization
      */
     public function getAuthorization()
     {
@@ -57,7 +57,7 @@ class Client
     /**
      * Retrieves currently configured http broker.
      *
-     * @return vasyaxy\Services\Trello\Http
+     * @return Http
      */
     public function getHttp()
     {
