@@ -6,11 +6,6 @@
     "license" : "MIT",
     "authors" : [
         {
-            "name" : "Steven Maguire",
-            "email" : "stevenmaguire@gmail.com",
-            "homepage" : "http://stevenmaguire.com",
-            "role" : "Developer"
-        },{
             "name" : "VasyaM",
             "email" : "vasyam@gmail.com",
             "homepage" : "https://vasyam.com",
@@ -30,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Stevenmaguire\\Services\\Trello\\": "src/"
+            "vasyaxy\\Services\\Trello\\": "src/"
         }
     },
     "autoload-dev": {

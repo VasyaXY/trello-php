@@ -16,7 +16,7 @@ trait BatchTrait
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return vasyaxy\Services\Trello\Http
      * @codeCoverageIgnore
      */
     abstract public function getHttp();

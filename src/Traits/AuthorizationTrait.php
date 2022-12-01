@@ -9,7 +9,7 @@ trait AuthorizationTrait
     /**
      * Retrieves currently configured authorization broker.
      *
-     * @return Stevenmaguire\Services\Trello\Authorization
+     * @return vasyaxy\Services\Trello\Authorization
      * @codeCoverageIgnore
      */
     abstract public function getAuthorization();
@@ -17,7 +17,7 @@ trait AuthorizationTrait
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return vasyaxy\Services\Trello\Http
      * @codeCoverageIgnore
      */
     abstract public function getHttp();
