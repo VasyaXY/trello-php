@@ -11,7 +11,7 @@ A PHP client for consuming the Trello API.
 Via Composer
 
 ``` bash
-$ composer require VasyaXY/trello-php
+$ composer require vasyaxy/trello-php
 ```
 
 ## Usage
