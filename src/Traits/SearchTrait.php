@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\Services\Trello\Traits;
+namespace vasyaxy\Services\Trello\Traits;
 
 trait SearchTrait
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\Services\Trello\Exceptions;
+namespace vasyaxy\Services\Trello\Exceptions;
 
 use Exception as BaseException;
 

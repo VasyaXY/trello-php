@@ -12,7 +12,7 @@ set_error_handler(function ($errno, $errstr, $errfile, $errline) use ($currentUr
     return false;
 });
 
-$client = new \VasyaXY\Services\Trello\Client(array(
+$client = new \vasyaxy\Services\Trello\Client(array(
     'key' => 'your-app-key',
     'secret' => 'your-app-secret',
     'name' => 'My sweet trello enabled app',

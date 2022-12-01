@@ -1,15 +1,15 @@
 <?php
 
-namespace VasyaXY\Services\Trello\Tests;
+namespace vasyaxy\Services\Trello\Tests;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Trello as OAuth;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use VasyaXY\Services\Trello\Authorization;
-use VasyaXY\Services\Trello\Client;
-use VasyaXY\Services\Trello\Configuration;
+use vasyaxy\Services\Trello\Authorization;
+use vasyaxy\Services\Trello\Client;
+use vasyaxy\Services\Trello\Configuration;
 
 class AuthorizationTest extends TestCase
 {

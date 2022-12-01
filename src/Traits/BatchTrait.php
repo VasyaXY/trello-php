@@ -1,8 +1,8 @@
 <?php
 
-namespace VasyaXY\Services\Trello\Traits;
+namespace vasyaxy\Services\Trello\Traits;
 
-use VasyaXY\Services\Trello\Exceptions\Exception;
+use vasyaxy\Services\Trello\Exceptions\Exception;
 
 trait BatchTrait
 {

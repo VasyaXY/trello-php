@@ -2,7 +2,7 @@
     "name" : "vasyaxy/trello-php",
     "description" : "PHP wrapper for Trello API",
     "keywords" : ["trello","php","client","wrapper","trello gold"],
-    "homepage" : "https://github.com/VasyaXY/trello-php",
+    "homepage" : "https://github.com/vasyaxy/trello-php",
     "license" : "MIT",
     "authors" : [
         {
@@ -35,7 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "VasyaXY\\Services\\Trello\\Tests\\": "tests/"
+            "vasyaxy\\Services\\Trello\\Tests\\": "tests/"
         },
         "classmap": [
             "src/",

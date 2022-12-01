@@ -15,13 +15,13 @@ jobs:
           ref: main
 
       - name: Update Changelog
-        uses: VasyaXY/changelog-updater-action@v1
+        uses: vasyaxy/changelog-updater-action@v1
         with:
           latest-version: ${{ github.event.release.name }}
           release-notes: ${{ github.event.release.body }}
 
       - name: Commit updated CHANGELOG
-        uses: VasyaXY/git-auto-commit-action@v4
+        uses: vasyaxy/git-auto-commit-action@v4
         with:
           branch: main
           commit_message: Update CHANGELOG

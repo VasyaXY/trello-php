@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\Services\Trello;
+namespace vasyaxy\Services\Trello;
 
 class Configuration
 {

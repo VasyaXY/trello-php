@@ -1,6 +1,6 @@
 <?php
 
-namespace VasyaXY\Services\Trello;
+namespace vasyaxy\Services\Trello;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Server\Trello as OAuthServer;

@@ -1,8 +1,8 @@
 # Trello PHP
 
-[![Latest Version](https://img.shields.io/github/release/VasyaXY/trello-php.svg?style=flat-square)](https://github.com/VasyaXY/trello-php/releases)
+[![Latest Version](https://img.shields.io/github/release/vasyaxy/trello-php.svg?style=flat-square)](https://github.com/vasyaxy/trello-php/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/VasyaXY/trello-php.svg?style=flat-square)](https://packagist.org/packages/VasyaXY/trello-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/vasyaxy/trello-php.svg?style=flat-square)](https://packagist.org/packages/vasyaxy/trello-php)
 
 A PHP client for consuming the Trello API.
 
@@ -22,7 +22,7 @@ Full client documentation is available in the [API Guide](API-GUIDE.md).
 
 *Make sure you have secured your Trello API keys before going further. There is [a handy guide](https://trello.com/docs/gettingstarted/index.html) for that.*
 
-This project includes a [basic example](https://github.com/VasyaXY/trello-php/tree/master/example/index.php). You can run this example to test your application details. Open the example file and include your `key` and `secret`, run `php -S localhost:8000 -t example`, visit `http://localhost:8000` in your favorite browser.
+This project includes a [basic example](https://github.com/vasyaxy/trello-php/tree/master/example/index.php). You can run this example to test your application details. Open the example file and include your `key` and `secret`, run `php -S localhost:8000 -t example`, visit `http://localhost:8000` in your favorite browser.
 
 ### Configure the client
 
@@ -44,7 +44,7 @@ Setting | Description
 #### Set configuration when creating client
 
 ```php
-$client = new VasyaXY\Services\Trello\Client(array(
+$client = new vasyaxy\Services\Trello\Client(array(
     'callbackUrl' => 'http://your.domain/oauth-callback-url',
     'domain' => 'https://trello.com',
     'expiration' => '3days',
@@ -61,7 +61,7 @@ $client = new VasyaXY\Services\Trello\Client(array(
 #### Set multiple configuration after creating client
 
 ```php
-$client = new VasyaXY\Services\Trello\Client(array(
+$client = new vasyaxy\Services\Trello\Client(array(
     'key' => 'my-application-key',
     'name' => 'My sweet trello enabled app',
 ));
@@ -78,7 +78,7 @@ $client->addConfig($config);
 #### Set single configuration after creating client
 
 ```php
-$client = new VasyaXY\Services\Trello\Client(array(
+$client = new vasyaxy\Services\Trello\Client(array(
     'key' => 'my-application-key',
     'name' => 'My sweet trello enabled app',
 ));
@@ -95,7 +95,7 @@ This package utilizes [The League's OAuth1 Trello Client](https://github.com/the
 #### Create a basic client
 
 ```php
-$client = new VasyaXY\Services\Trello\Client(array(
+$client = new vasyaxy\Services\Trello\Client(array(
     'key' => 'my-application-key',
     'secret' => 'my-application-secret',
 ));
@@ -149,7 +149,7 @@ $user = $client->getCurrentUser();
 Get inventory of all entities that belong to your user
 
 ```php
-$client = new VasyaXY\Services\Trello\Client(array(
+$client = new vasyaxy\Services\Trello\Client(array(
     'key' => 'my-application-key',
     'token' => 'your-users-access-token',
 ));
@@ -164,12 +164,12 @@ Most of the methods available in the [API Guide](API-GUIDE.md) require entity id
 
 ### Handling exceptions
 
-When handling exceptions that result during requests to Trello using the client, a `VasyaXY\Services\Trello\Exceptions\Exception` will be thrown. This exception will include information from the underlying Http request/response issues, including the response body from Trello.
+When handling exceptions that result during requests to Trello using the client, a `vasyaxy\Services\Trello\Exceptions\Exception` will be thrown. This exception will include information from the underlying Http request/response issues, including the response body from Trello.
 
 ```php
 try {
     $board = $client->getBoard($boardId);
-} catch (VasyaXY\Services\Trello\Exceptions\Exception $e) {
+} catch (vasyaxy\Services\Trello\Exceptions\Exception $e) {
     $code = $e->getCode(); // Http status code from response
     $reason = $e->getMessage(); // Http status reason phrase
     $error = $e->getPrevious(); // GuzzleHttp\Exception\RequestException from http client
@@ -190,8 +190,8 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details. You can see the current 
 
 ## Credits
 
-- [Steven Maguire](https://github.com/VasyaXY)
-- [All Contributors](https://github.com/VasyaXY/trello-php/contributors)
+- [Steven Maguire](https://github.com/vasyaxy)
+- [All Contributors](https://github.com/vasyaxy/trello-php/contributors)
 
 ## License
 

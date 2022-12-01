@@ -1,9 +1,9 @@
 <?php
 
-namespace VasyaXY\Services\Trello\Tests;
+namespace vasyaxy\Services\Trello\Tests;
 
 use PHPUnit\Framework\TestCase;
-use VasyaXY\Services\Trello\Client;
+use vasyaxy\Services\Trello\Client;
 
 class BuilderTest extends TestCase
 {
