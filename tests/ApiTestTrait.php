@@ -1,8 +1,8 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello\Tests;
+namespace VasyaXY\Services\Trello\Tests;
 
-use Stevenmaguire\Services\Trello\Exceptions\Exception;
+use VasyaXY\Services\Trello\Exceptions\Exception;
 
 trait ApiTestTrait
 {

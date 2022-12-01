@@ -1,10 +1,10 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello\Tests;
+namespace VasyaXY\Services\Trello\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Configuration;
+use VasyaXY\Services\Trello\Client;
+use VasyaXY\Services\Trello\Configuration;
 
 class ConfigurationTest extends TestCase
 {

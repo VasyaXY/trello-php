@@ -1,6 +1,6 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello\Tests;
+namespace VasyaXY\Services\Trello\Tests;
 
 use BadMethodCallException;
 use GuzzleHttp\ClientInterface as HttpClient;
@@ -10,9 +10,9 @@ use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Stevenmaguire\Services\Trello\Authorization;
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Exceptions\Exception as ServiceException;
+use VasyaXY\Services\Trello\Authorization;
+use VasyaXY\Services\Trello\Client;
+use VasyaXY\Services\Trello\Exceptions\Exception as ServiceException;
 
 class ClientTest extends TestCase
 {

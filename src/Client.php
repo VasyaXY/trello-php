@@ -1,16 +1,16 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello;
+namespace VasyaXY\Services\Trello;
 
 use GuzzleHttp\ClientInterface as HttpClient;
 
 class Client
 {
-    use Traits\ApiMethodsTrait;
-    use Traits\AuthorizationTrait;
-    use Traits\BatchTrait;
-    use Traits\ConfigurationTrait;
-    use Traits\SearchTrait;
+    use VasyaXY\Services\Trello\Traits\ApiMethodsTrait;
+    use VasyaXY\Services\Trello\Traits\AuthorizationTrait;
+    use VasyaXY\Services\Trello\Traits\BatchTrait;
+    use VasyaXY\Services\Trello\Traits\ConfigurationTrait;
+    use VasyaXY\Services\Trello\Traits\SearchTrait;
 
     /**
      * Default client options

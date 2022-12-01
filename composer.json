@@ -1,14 +1,19 @@
 {
-    "name" : "stevenmaguire/trello-php",
+    "name" : "VasyaXY/trello-php",
     "description" : "PHP wrapper for Trello API",
     "keywords" : ["trello","php","client","wrapper","trello gold"],
-    "homepage" : "http://github.com/stevenmaguire/trello-php",
+    "homepage" : "https://github.com/VasyaXY/trello-php",
     "license" : "MIT",
     "authors" : [
         {
             "name" : "Steven Maguire",
             "email" : "stevenmaguire@gmail.com",
             "homepage" : "http://stevenmaguire.com",
+            "role" : "Developer"
+        },{
+            "name" : "VasyaM",
+            "email" : "vasyam@gmail.com",
+            "homepage" : "http://vasyam.com",
             "role" : "Developer"
         }
     ],
@@ -30,7 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Stevenmaguire\\Services\\Trello\\Tests\\": "tests/"
+            "VasyaXY\\Services\\Trello\\Tests\\": "tests/"
         },
         "classmap": [
             "src/",

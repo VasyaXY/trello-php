@@ -1,6 +1,6 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello;
+namespace VasyaXY\Services\Trello;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Server\Trello as OAuthServer;
@@ -58,7 +58,7 @@ class Authorization
             $sessionKey = self::getCredentialSessionKey();
             $temporaryCredentials = $this->getTemporaryCredentials();
             $_SESSION[$sessionKey] = serialize($temporaryCredentials);
-            session_write_close();
+            //session_write_close();
         }
 
         return $this->client->getAuthorizationUrl($temporaryCredentials);
@@ -105,7 +105,7 @@ class Authorization
             $sessionKey = self::getCredentialSessionKey();
             $temporaryCredentials = unserialize($_SESSION[$sessionKey]);
             unset($_SESSION[$sessionKey]);
-            session_write_close();
+            //session_write_close();
         }
 
         return $this->client->getTokenCredentials(

@@ -1,6 +1,6 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello\Traits;
+namespace VasyaXY\Services\Trello\Traits;
 
 use BadMethodCallException;
 

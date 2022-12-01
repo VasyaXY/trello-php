@@ -1,15 +1,15 @@
 <?php
 
-namespace Stevenmaguire\Services\Trello\Tests;
+namespace VasyaXY\Services\Trello\Tests;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Trello as OAuth;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use Stevenmaguire\Services\Trello\Authorization;
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Configuration;
+use VasyaXY\Services\Trello\Authorization;
+use VasyaXY\Services\Trello\Client;
+use VasyaXY\Services\Trello\Configuration;
 
 class AuthorizationTest extends TestCase
 {
@@ -66,7 +66,7 @@ class AuthorizationTest extends TestCase
         $sessionKey = Authorization::class.':temporary_credentials';
         $tempCredentials = new TemporaryCredentials();
         $_SESSION[$sessionKey] = serialize($tempCredentials);
-        session_write_close();
+        //session_write_close();
         $oauthToken = uniqid();
         $oauthVerifier = uniqid();
         $tokenCredentials = new TokenCredentials();
