@@ -52,12 +52,13 @@ class Authorization
      *
      * @return string Authorization url
      */
-    public function getAuthorizationUrl(TemporaryCredentials $temporaryCredentials = null)
+    public function getAuthorizationUrl(TemporaryCredentials $temporaryCredentials = null, $session = null)
     {
         if (is_null($temporaryCredentials)) {
             $sessionKey = self::getCredentialSessionKey();
             $temporaryCredentials = $this->getTemporaryCredentials();
-            $_SESSION[$sessionKey] = serialize($temporaryCredentials);
+                $session?->set($sessionKey, serialize($temporaryCredentials));
+            //$_SESSION[$sessionKey] = serialize($temporaryCredentials);
             //session_write_close();
         }
 
@@ -96,15 +97,17 @@ class Authorization
      * @param  string               $oauthToken
      * @param  string               $oauthVerifier
      * @param  TemporaryCredentials $temporaryCredentials
+     * @param  object|null          $session
      *
      * @return \League\OAuth1\Client\Credentials\CredentialsInterface
      */
-    public function getToken($oauthToken, $oauthVerifier, TemporaryCredentials $temporaryCredentials = null)
+    public function getToken($oauthToken, $oauthVerifier, TemporaryCredentials $temporaryCredentials = null, object $session = null)
     {
         if (is_null($temporaryCredentials)) {
             $sessionKey = self::getCredentialSessionKey();
-            $temporaryCredentials = unserialize($_SESSION[$sessionKey]);
-            unset($_SESSION[$sessionKey]);
+            $temporaryCredentials = unserialize($session?->get($sessionKey));
+            $session?->del($sessionKey);
+            //unset($_SESSION[$sessionKey]);
             //session_write_close();
         }
 

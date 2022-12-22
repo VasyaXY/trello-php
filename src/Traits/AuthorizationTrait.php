@@ -41,9 +41,9 @@ trait AuthorizationTrait
      *
      * @return string
      */
-    public function getAuthorizationUrl(TemporaryCredentials $temporaryCredentials = null)
+    public function getAuthorizationUrl(TemporaryCredentials $temporaryCredentials = null, object $session = null)
     {
-        return $this->getAuthorization()->getAuthorizationUrl($temporaryCredentials);
+        return $this->getAuthorization()->getAuthorizationUrl($temporaryCredentials, $session);
     }
 
     /**
@@ -52,12 +52,13 @@ trait AuthorizationTrait
      * @param  string                                                  $token
      * @param  string                                                  $verifier
      * @param  League\OAuth1\Client\Credentials\TemporaryCredentials   $temporaryCredentials
+     * @param  object|null                                             $session
      *
      * @return League\OAuth1\Client\Credentials\CredentialsInterface
      */
-    public function getAccessToken($token, $verifier, TemporaryCredentials $temporaryCredentials = null)
+    public function getAccessToken($token, $verifier, TemporaryCredentials $temporaryCredentials = null, object $session = null)
     {
-        return $this->getAuthorization()->getToken($token, $verifier, $temporaryCredentials);
+        return $this->getAuthorization()->getToken($token, $verifier, $temporaryCredentials, $session);
     }
 
     /**
